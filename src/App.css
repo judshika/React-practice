@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
 
@@ -32,11 +32,170 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
-.card {
-  padding: 2em;
+a {
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  
 }
 
-.read-the-docs {
-  color: #888;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+   background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+     z-index: 100;
+}
+
+
+nav h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav li:hover {
+  color: #fff;
+} 
+
+
+
+
+
+/* Project Section */
+.PROJECT {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.box {
+  display: inline-block;
+  background: #fefefe;
+  width: 250px;
+  margin: 15px;
+  padding: 25px 15px;
+  border-radius: 12px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+.box:hover {
+  background-color: #6a0dad;
+  color: white;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* About Section */
+.LANGUAGE {
+  background-color: #eef0f3;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.LANGUAGE h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.LANGUAGE p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.CONTACT {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.CONTACT h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.CONTACT p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.CONTACT a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.CONTACT a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input[type='text'] {
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
+.section {
+  padding: 40px 20px;
+  scroll-margin-top: 130px; 
 }
