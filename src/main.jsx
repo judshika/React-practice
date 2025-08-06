@@ -20,15 +20,15 @@ import Projects from './Projects';
 import Education from './Education.jsx';
 import Summary from './Summery.jsx';
 import Contact from './Contact';
-import Portfolio from './Portfolio.jsx';
+import Login from './Login.jsx';
+import App from './portfolio.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    {/*<Inputform/>*/}
-    {/*<Inputform2/>*/}
-    {/*<Landingpage/>*/}
-    <Portfolio/>
+    <Login/>
+    <Login/>
+    
+<App/>
 
     
     
